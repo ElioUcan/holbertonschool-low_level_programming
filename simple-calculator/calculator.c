@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int menu(void){
+    puts("\n\nSimple Calculator\n1)Add\n2)Substract\n3)Multiply\n4)Divide\n0)Quit\nChoice: ");
+    return (0);
+}
+int add(int x, int y){
+    return (x + y);
+}
+int substract(int x, int y){
+    return (x - y);
+}
+
+int multiply(int x, int y){
+    return (x * y);
+}
+
+int divide(int x, int y){
+    return (x / y);
+}
+
+
+int main(void){
+    int option;
+    int value1;
+    int value2;
+
+    puts("Welcome!!");
+    while (1){
+        menu();
+        scanf("%i", &option);
+        if (option >= 0 && option <= 4){
+            switch (option)
+            {
+            case 1:
+                puts("Introduce the values: (e.g x + y)");
+                scanf("%i %i", &value1, &value2);
+                printf("The result is: %i", add(value1, value2));
+                break;
+            case 2:
+                puts("Introduce the values: (e.g x - y)");
+                scanf("%i %i", &value1, &value2);
+                printf("The result is: %i", substract(value1, value2));
+                break;
+            case 3:
+                puts("Introduce the values: (e.g x * y)");
+                scanf("%i %i", &value1, &value2);
+                printf("The result is: %i", multiply(value1, value2));
+                break;
+            case 4:
+                puts("Introduce the values: (e.g x / y)");
+                scanf("%i %i", &value1, &value2);
+                printf("The result is: %i", divide(value1, value2));
+                break;
+            case 0:
+                puts("Bye!");
+                return (0);
+            default:
+                break;
+            }
+        }
+        else{
+            puts("Invalid input");
+        }    
+    }
+}
