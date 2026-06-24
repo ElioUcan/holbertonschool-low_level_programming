@@ -33,23 +33,31 @@ int main(void){
             switch (option)
             {
             case 1:
-                puts("Introduce the values: (e.g x + y)");
-                scanf("%i %i", &value1, &value2);
+                puts("A: ");
+                scanf("%i", &value1);
+                puts("B: ");
+                scanf("%i", &value2);
                 printf("Result: %i", add(value1, value2));
                 break;
             case 2:
-                puts("Introduce the values: (e.g x - y)");
-                scanf("%i %i", &value1, &value2);
+                puts("A: ");
+                scanf("%i", &value1);
+                puts("B: ");
+                scanf("%i", &value2);
                 printf("Result: %i", substract(value1, value2));
                 break;
             case 3:
-                puts("Introduce the values: (e.g x * y)");
-                scanf("%i %i", &value1, &value2);
+                puts("A: ");
+                scanf("%i", &value1);
+                puts("B: ");
+                scanf("%i", &value2);
                 printf("Result: %i", multiply(value1, value2));
                 break;
             case 4:
-                puts("Introduce the values: (e.g x / y)");
-                scanf("%i %i", &value1, &value2);
+                puts("A: ");
+                scanf("%i", &value1);
+                puts("B: ");
+                scanf("%i", &value2);
                 printf("Result: %i", divide(value1, value2));
                 break;
             case 0:
