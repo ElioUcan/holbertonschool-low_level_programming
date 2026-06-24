@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int menu(void){
-    puts("\n\nSimple Calculator\n1)Add\n2)Substract\n3)Multiply\n4)Divide\n0)Quit\nChoice: ");
+    printf("\nSimple Calculator\n1)Add\n2)Substract\n3)Multiply\n4)Divide\n0)Quit\nChoice: ");
     return (0);
 }
 int add(int x, int y){
@@ -33,30 +33,30 @@ int main(void){
             switch (option)
             {
             case 1:
-                puts("A: ");
+                printf("A: ");
                 scanf("%i", &value1);
-                puts("B: ");
+                printf("B: ");
                 scanf("%i", &value2);
                 printf("Result: %i", add(value1, value2));
                 break;
             case 2:
-                puts("A: ");
+                printf("A: ");
                 scanf("%i", &value1);
-                puts("B: ");
+                printf("B: ");
                 scanf("%i", &value2);
                 printf("Result: %i", substract(value1, value2));
                 break;
             case 3:
-                puts("A: ");
+                printf("A: ");
                 scanf("%i", &value1);
-                puts("B: ");
+                printf("B: ");
                 scanf("%i", &value2);
                 printf("Result: %i", multiply(value1, value2));
                 break;
             case 4:
-                puts("A: ");
+                printf("A: ");
                 scanf("%i", &value1);
-                puts("B: ");
+                printf("B: ");
                 scanf("%i", &value2);
                 printf("Result: %i", divide(value1, value2));
                 break;
