@@ -15,14 +15,11 @@ for (i = 0; i < 24; i++)
 {
 for (j = 0; j < 60; j++)
 {
-if (i < 10 && j < 10)
-{
 _putchar('0');
 _putchar('0' + i);
 _putchar(':');
 _putchar('0');
 _putchar('0' + j);
-}
 _putchar('\n');
 }
 }
