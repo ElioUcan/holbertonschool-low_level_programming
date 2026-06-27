@@ -8,5 +8,9 @@
  */
 int print_last_digit(int v)
 {
+if (v < 0)
+{
+v *= -1;    
+}
 return (v % 10);
 }
