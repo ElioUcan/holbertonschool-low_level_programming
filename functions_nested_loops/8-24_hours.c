@@ -7,7 +7,7 @@
  * Retunrn: nothing
  */
 
- void jack_bauer(void)
+void jack_bauer(void)
 {
 int i;
 int j;
@@ -28,6 +28,7 @@ else
 _putchar('0' + i);
 _putchar(':');
 _putchar('0' + j);
+}
 }
 }
 }
