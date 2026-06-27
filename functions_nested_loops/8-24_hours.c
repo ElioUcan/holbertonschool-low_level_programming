@@ -23,12 +23,6 @@ _putchar(':');
 _putchar('0');
 _putchar('0' + j);
 }
-else
-{
-_putchar('0' + i);
-_putchar(':');
-_putchar('0' + i);
-}
 _putchar('\n');
 }
 }
