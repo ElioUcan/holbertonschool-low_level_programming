@@ -29,6 +29,6 @@ _putchar('0' + i);
 _putchar(':');
 _putchar('0' + i);
 }
-_putchar('\n')
+_putchar('\n');
 }
 }
