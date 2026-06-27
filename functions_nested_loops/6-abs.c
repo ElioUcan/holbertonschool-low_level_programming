@@ -11,5 +11,5 @@ if (v < 0)
 {
 return (v*-1);
 }
-return (0);
+return (v);
 }
