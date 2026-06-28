@@ -21,7 +21,6 @@ if (r >=10)
 _putchar('0' + r / 10);
 }
 _putchar('0' + r % 10);
-}
 if (j != 9)
 {
 _putchar(',');
