@@ -18,6 +18,7 @@ for (j = 0; j <= i; j++)
 {
 _putchar(35);
 }
+_putchar('\n');
 }
 }
 _putchar('\n');
