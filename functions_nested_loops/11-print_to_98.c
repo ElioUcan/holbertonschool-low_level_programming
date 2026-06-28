@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * print_to_98 - prints the number till 98
+ * @n: int value
  *
  * Return: nothing
  */
@@ -16,7 +17,7 @@ while (n >= 98)
 if (n == 98)
 {
 printf("%i\n", n);
-break; 
+break;
 }
 printf("%i, ", n);
 n--;
@@ -29,7 +30,7 @@ while (n <= 98)
 if (n == 98)
 {
 printf("%i\n", n);
-break; 
+break;
 }
 printf("%i, ", n);
 n++;
