@@ -27,8 +27,7 @@ _putchar('0' + r / 10);
 }
 else if ( j != 0)
 {
-_putchar(' ');
-_putchar(' ');
+_putchar(' ');;
 }
 _putchar('0' + r % 10);
 }
