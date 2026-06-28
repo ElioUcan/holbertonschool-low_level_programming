@@ -26,7 +26,7 @@ else
 {
 _putchar('0' + r);
 }
-_putchar('\n');
 }
+_putchar('\n');
 }
 }
