@@ -21,5 +21,7 @@ _putchar(35);
 _putchar('\n');
 }
 }
+else{
 _putchar('\n');
+}
 }
