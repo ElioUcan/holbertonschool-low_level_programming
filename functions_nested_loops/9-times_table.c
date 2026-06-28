@@ -16,17 +16,19 @@ for (i = 0; i <= 9; i++)
 for (j = 0; j <= 9; j++)
 {
 r = j * i;
-if (r >=10)
-{
-_putchar('0' + r / 10);
-}
-_putchar('0' + r % 10);
-if (j != 9)
+if (j != 0)
 {
 _putchar(',');
 _putchar(' ');
 }
+if (r >=10)
+{
+_putchar('0' + r / 10);
 }
+else if ( j != 0){
+_putchar('  ');
+}
+_putchar('0' + r % 10);
 _putchar('\n');
 }
 }
