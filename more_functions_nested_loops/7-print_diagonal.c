@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_diagonal - draws a diagonal line on the termina
- * @b: int
+ * @n: int
  * Return: nothing
  */
 void print_diagonal(int n)
@@ -13,6 +13,6 @@ for (i = 0; i <= n; i++)
 {
 _putchar(92);
 }
-_putchar('\n');
 }
+_putchar('\n');
 }
