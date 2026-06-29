@@ -57,12 +57,6 @@ int main(void)
     clock_t c2;
     clock_t c3;
     clock_t c4;
-
-    double elapsed;
-    double build;
-    double process;
-    double reduce;
-
     /* Students must add clock-based timing and print required lines. */
     c1 = clock();
     build_dataset();
