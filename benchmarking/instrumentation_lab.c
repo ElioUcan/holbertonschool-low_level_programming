@@ -69,7 +69,6 @@ int main(void)
         printf("impossible\n");
     
     c4 = clock();
-    elapsed = (double)(c4 - c1) / (double)CLOCKS_PER_SEC;
     /* Required output (exact format, no extra lines):
      * TOTAL seconds: <float>
      * BUILD_DATA seconds: <float>
