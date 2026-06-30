@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * _puts: prints and add a \n
+ * _puts: prints and add a newline
  * @str: string
  * Return: nothing
  */
