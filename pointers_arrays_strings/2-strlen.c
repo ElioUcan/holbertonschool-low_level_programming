@@ -12,7 +12,6 @@ int i;
 while (s[i] != '\n')
 {
 i++;
-printf("%i", i);
 }
 return (i);
 }
