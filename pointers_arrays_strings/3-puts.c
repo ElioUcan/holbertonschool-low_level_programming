@@ -18,13 +18,6 @@ while (str[i] != '\0')
 {
 i++;
 }
-write(1,str, i);
+write(1, str, i);
 write(1, &new, 1);
-}
-
-
-int main(void)
-{
-_puts("Hello");
-return (0);
 }
