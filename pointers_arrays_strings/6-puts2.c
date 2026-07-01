@@ -10,12 +10,19 @@
 void puts2(char *str)
 {
 int i = 0;
+int j = 0;
 while (str[i] != '\0')
 {
 i++;
 }
-while (i % 2 != 0)
+
+for (i; i >= 0; i--)
 {
-write(1, &str[i], i);
+if (i % 2 == 0)
+{
+write(1, &str[j], 1);
 }
+j++;
+}
+write(1, "\n", 1);
 }
