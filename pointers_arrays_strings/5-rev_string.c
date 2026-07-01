@@ -1,11 +1,12 @@
 #include "main.h"
+#include <unistd.h>
 /**
  * rev_string - reverses a string
  * @s: char
  * Return: nothing
  */
 
- void rev_string(char *s)
+void rev_string(char *s)
 {
 int i = 0;
 
