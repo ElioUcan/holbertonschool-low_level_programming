@@ -19,7 +19,7 @@ for (; i >= 0; i--)
 {
 if (i % 2 == 0)
 {
-if (&str[i] != '\0' && &str[j] != '\n')
+if (str[i] != '\0' && str[j] != '\n')
 {
 write(1, &str[j], 1);
 }
