@@ -15,7 +15,7 @@ while (str[i] != '\0')
 {
 i++;
 }
-if (i % 2 != 0 || i == 0)
+if (i % 2 != 0)
 {
 i--;
 }
@@ -23,8 +23,8 @@ for (; i >= 0; i--)
 {
 if (i % 2 == 0)
 {
-if (str[i] != '\n' || str[i] != '\0')
-{
+if (str[i] != '\n' && str[j] != '\0')//Por alguna razon esto  hace que tenga 7 chars
+{   
 write(1, &str[j], 1);
 }
 }
