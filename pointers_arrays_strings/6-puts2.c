@@ -23,7 +23,7 @@ for (; i >= 0; i--)
 {
 if (i % 2 == 0)
 {
-if (str[i] != '\0' && str[i] != '\n')
+if (str[i] != '\n')
 {
 write(1, &str[j], 1);
 }
@@ -31,4 +31,10 @@ write(1, &str[j], 1);
 j++;
 }
 write(1, "\n", 1);
+}
+
+int main(void){
+
+    puts2("Holberton!");
+    return (0);
 }
