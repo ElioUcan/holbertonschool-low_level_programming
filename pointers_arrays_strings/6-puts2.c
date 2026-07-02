@@ -29,11 +29,3 @@ j++;
 }
 write(1, "\n", 1);
 }
-
-int main(void)
-{
-
-puts2("Holberton");
-
-return (0);
-}
