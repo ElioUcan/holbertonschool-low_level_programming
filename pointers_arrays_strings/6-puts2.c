@@ -23,7 +23,7 @@ for (; i >= 0; i--)
 {
 if (i % 2 == 0)
 {
-if (str[i] != '\n' && str[j] != '\0')//Por alguna razon esto  hace que tenga 7 chars
+if (str[i] != '\n' && str[j] != '\0')
 {   
 write(1, &str[j], 1);
 }
