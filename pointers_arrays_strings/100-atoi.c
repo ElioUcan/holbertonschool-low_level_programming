@@ -7,7 +7,6 @@
 
 int _atoi(char *s)
 {
-int value = s - '0';
 int sign = 1;
 int number = 0;
 int i = 0;
@@ -29,5 +28,5 @@ break;
 }
 i++;
 }
-return ((res)(sign));
+return (res * sign);
 }
