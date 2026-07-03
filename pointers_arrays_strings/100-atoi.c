@@ -28,5 +28,6 @@ break;
 }
 i++;
 }
-return (res * sign);
+res *= sign;
+return (res);
 }
