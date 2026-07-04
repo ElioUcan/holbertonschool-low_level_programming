@@ -14,7 +14,7 @@ while (s[i] != '\0')
 {
 if (s[i] == c)
 {
-return (c);
+return (&s[i]);
 }
 }
 return (NULL);
