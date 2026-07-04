@@ -22,9 +22,10 @@ for (j = 0; accept[j] != '\0'; j++)
 {
 if (s[i] == accept[j])
 {
-return (s);
+return (&s[i]);
 }
+}
+i++;
 }
 return (NULL);
-}
 }
