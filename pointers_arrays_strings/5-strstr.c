@@ -26,11 +26,11 @@ if (haystack[j + i] != needle[j])
 break;
 }
 }
-}
-
 if (needle[j] == '\0')
 {
 return (&haystack[i]);
+}
+i++;
 }
 
 return (NULL);
