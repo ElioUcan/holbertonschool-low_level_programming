@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_chessboard - prints a chess board 
+ * print_chessboard - prints a chess board
  * @a: pointer of lenght 8
  * Return: nothing
  */
