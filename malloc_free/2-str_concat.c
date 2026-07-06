@@ -46,5 +46,6 @@ for (j = 0; s2[j] != '\0'; i++)
 concatenate[i] = s2[j];
 i++;
 }
+concatenate[i] = '\0';
 return (concatenate);
 }
