@@ -23,7 +23,7 @@ while (str[size] != '\0')
 size++;
 }
 
-copy = malloc((size) * sizeof(str));
+copy = malloc((size + 1) * sizeof(str));
 
 if (copy == NULL)
 {
