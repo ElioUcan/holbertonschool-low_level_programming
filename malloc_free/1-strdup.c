@@ -10,8 +10,8 @@
 char *_strdup(char *str)
 {
 char *copy;
-unsigned int size = 0;
-unsigned int i;
+int size = 0;
+int i;
 
 if (str == NULL)
 {
@@ -23,7 +23,7 @@ while (str[size] != '\0')
 size++;
 }
 
-copy = malloc((size + 1) * sizeof(str));
+copy = malloc((size + 1) * sizeof(char));
 
 if (copy == NULL)
 {
