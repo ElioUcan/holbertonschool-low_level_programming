@@ -11,7 +11,7 @@
 
 void free_grid(int **grid, int height)
 {
-int *arr;
+int **arr;
 int i;
 int j;
 arr = alloc_grid(grid, height);
