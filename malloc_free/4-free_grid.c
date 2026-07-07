@@ -12,9 +12,16 @@
 void free_grid(int **grid, int height)
 {
 int **arr;
+int width = 0;
 int i;
 int j;
-arr = alloc_grid(grid, height);
+
+while (grid[width] != NULL)
+{
+width++;
+}
+
+arr = alloc_grid(width, height);
 
 for (i = 0; i < height; i++)
 {
