@@ -6,12 +6,12 @@
  * created by your alloc_grid function.
  * @grid: int
  * @height: int
- * Return: nothing
+ * Return: nothings
  */
 
 void free_grid(int **grid, int height)
 {
-int **arr;
+int arr;
 int i;
 int j;
 arr = alloc_grid(grid, height);
