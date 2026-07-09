@@ -20,7 +20,7 @@ if (p == NULL)
 {
 return (NULL);
 }
-while (p[i] != NULL)
+while (*(p+i) != NULL)
 {
 p[i] = 0;
 i++;
