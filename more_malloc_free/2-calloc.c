@@ -22,7 +22,7 @@ return (NULL);
 }
 while (i <= nmemb)
 {
-p[i] = 0;
+p[i] = NULL;
 i++;
 }
 return (p);
