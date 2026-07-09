@@ -30,7 +30,7 @@ while (s1[i] != '\0')
 i++;
 }
 i += n;
-arr = malloc(i * (sizeof(char)));
+arr = malloc((i +1) * (sizeof(char)));
 
 
 for (j = 0; j <= i; j++)
