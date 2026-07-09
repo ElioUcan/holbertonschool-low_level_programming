@@ -8,4 +8,35 @@
  * Return: char pointer
  */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+int i = 0;
+int j = 0;
+int k = 0;
+char *arr;
+
+while (s1[i] != '\0')
+{
+i++;
+}
+i += n;
+arr = malloc(i * (sizeof(char)));
+
+
+for (j = 0; j <= i; j++)
+{
+if (s1[j] != '\0')
+{
+arr[j] = s1[j];
+}
+else
+{
+arr[j] = s2[k];
+k++;
+}
+}
+
+arr[i] = '\0';
+
+return (arr);
+}
