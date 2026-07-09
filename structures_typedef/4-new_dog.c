@@ -14,6 +14,7 @@ dog_t *d;
 d = malloc(sizeof(dog_t));
 if (d == NULL)
 {
+free(d);
 return (NULL);
 }
 d->name = name;
