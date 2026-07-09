@@ -15,6 +15,16 @@ int j = 0;
 int k = 0;
 char *arr;
 
+if (s1 == NULL)
+{
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
+}
+
+
 while (s1[i] != '\0')
 {
 i++;
