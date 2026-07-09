@@ -20,9 +20,9 @@ if (p == NULL)
 {
 return (NULL);
 }
-while (i <= nmemb)
+while (i < (nmemb * size))
 {
-p[i] = NULL;
+p[i] = 0;
 i++;
 }
 return (p);
