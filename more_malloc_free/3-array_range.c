@@ -23,7 +23,7 @@ if (p == NULL)
 return (NULL);
 }
 
-for (i = 0; min < size; i++)
+for (i = 0; i < size; i++)
 {
 p[i] = min;
 min++;
