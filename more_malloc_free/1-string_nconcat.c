@@ -23,8 +23,6 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-
-
 while (s1[i] != '\0')
 {
 i++;
@@ -35,8 +33,6 @@ if (arr == NULL)
 {
 return (NULL);
 }
-
-
 for (j = 0; j <= i; j++)
 {
 if (s1[j] != '\0' && k <= 0)
@@ -49,8 +45,6 @@ arr[j] = s2[k];
 k++;
 }
 }
-
 arr[i] = '\0';
-
 return (arr);
 }
