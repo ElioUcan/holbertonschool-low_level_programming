@@ -47,6 +47,6 @@ for (k = 0; k <= j; k++)
 {
 d->owner[k] = owner[k];
 }
-d->owner = owner;
+d->age = age;
 return (d);
 }
