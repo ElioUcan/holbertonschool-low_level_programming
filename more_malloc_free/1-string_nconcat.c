@@ -35,7 +35,7 @@ arr = malloc(i * (sizeof(char)));
 
 for (j = 0; j <= i; j++)
 {
-if (s1[j] != '\0')
+if (s1[j] != '\0' && k <= 0)
 {
 arr[j] = s1[j];
 }
