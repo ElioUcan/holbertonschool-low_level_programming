@@ -11,9 +11,8 @@ int main(int args, char *expr[])
 {
 int num1;
 int num2;
-
+int result;
 int (*f)(int, int);
-
 if (args != 4)
 {
 _putchar('E');
@@ -24,12 +23,9 @@ _putchar('r');
 _putchar('\n');
 return (98);
 }
-
 num1 = atoi(expr[1]);
 num2 = atoi(expr[3]);
-
 f = get_op_func(expr[2]);
-
 if (f == NULL)
 {
 _putchar('E');
@@ -50,5 +46,7 @@ _putchar('r');
 _putchar('\n');
 return (100);
 }
-
+result = f(num1, num2);
+_putchar(result);
+_putchar('\n');
 }

@@ -18,7 +18,7 @@ op_t ops[] = {
 
 int i;
 
-for (i = 0; ops[i].op[0] != NULL; i++)
+for (i = 0; ops[i].op != NULL; i++)
 {
 if (ops[i].op[0] == s[0])
 {
