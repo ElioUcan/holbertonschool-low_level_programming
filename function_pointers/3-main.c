@@ -7,7 +7,7 @@
  * Return: 0 if correct.
  */
 
-void main(int args, char *expr[])
+int main(int args, char *expr[])
 {
 int num1;
 int num2;
@@ -49,4 +49,5 @@ return (100);
 result = f(num1, num2);
 _putchar(result);
 _putchar('\n');
+return (0);
 }
