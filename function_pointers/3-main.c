@@ -33,6 +33,6 @@ printf("Error\n");
 return (100);
 }
 result = f(num1, num2);
-printf("%i\n",result);
+printf("%i\n", result);
 return (0);
 }
