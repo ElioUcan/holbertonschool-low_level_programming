@@ -11,6 +11,7 @@ int main(int args, char *expr[])
 {
 int num1;
 int num2;
+
 int (*f)(int, int);
 
 if (args != 4)
@@ -23,6 +24,7 @@ _putchar('r');
 _putchar('\n');
 return (98);
 }
+
 num1 = atoi(expr[1]);
 num2 = atoi(expr[3]);
 
