@@ -7,7 +7,7 @@
  * Return: 0 if correct.
  */
 
-int main(int args, char *expr[])
+void main(int args, char *expr[])
 {
 int num1;
 int num2;
