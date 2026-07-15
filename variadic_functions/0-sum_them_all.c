@@ -16,7 +16,7 @@ return (0);
 }
 va_start(numb, n);
 
-while (i <= n)
+while (i < n)
 {
 total += va_arg(numb, int);
 i++;
