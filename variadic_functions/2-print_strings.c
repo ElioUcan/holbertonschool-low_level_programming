@@ -19,7 +19,7 @@ str = va_arg(chars, char *);
 
 if (str != NULL)
 {
-if ((n - 1) != i)
+if ((n - 1) != i && separator != NULL)
 {
 printf("%s", str);
 printf("%s", separator);
