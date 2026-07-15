@@ -23,7 +23,7 @@ printf("%i", va_arg(numb, int));
 else
 {
 printf("%i", va_arg(numb, int));
-printf("%c", separator);
+printf("%s", separator);
 }
 
 i++;
