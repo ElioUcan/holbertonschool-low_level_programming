@@ -47,7 +47,7 @@ printf("%s", va_arg(args, char *));
 /**
  * print_all - prints all
  * @char *: list
- * @format: format of the string.
+ * @format: format of the variable
  * Return: nothing
  */
 void print_all(const char * const format, ...)
