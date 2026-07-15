@@ -8,8 +8,10 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list chars;
-va_start(chars, n);
 unsigned int i = 0;
+
+va_start(chars, n);
+
 
 while (i < n)
 {
