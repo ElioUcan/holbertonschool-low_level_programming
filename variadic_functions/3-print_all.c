@@ -37,14 +37,12 @@ printf("%f", va_arg(args, double));
  */
 void print_string(va_list args)
 {
-if (args != NULL)
+char *str = va_arg(args, char *);
+if (str == NULL)
 {
-printf("%s", va_arg(args, char *));
+str = "(nil)";
 }
-else
-{
-printf("(nil)");
-}
+printf("%s", str);
 }
 
 
