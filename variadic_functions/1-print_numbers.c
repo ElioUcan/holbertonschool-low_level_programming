@@ -32,8 +32,8 @@ else
 printf("%i", va_arg(numb, int));
 printf("%s", separator);
 }
-}
 i++;
+}
 }
 putchar('\n');
 
