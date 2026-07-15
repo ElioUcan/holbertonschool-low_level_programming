@@ -10,39 +10,23 @@ void print_strings(const char *separator, const unsigned int n, ...)
 va_list chars;
 va_start(chars, n);
 unsigned int i = 0;
-char checker[] = "1234567890";
 
-
-if (separator == NULL)
-{
 while (i < n)
 {
-if (va_arg(chars, char) != checker[i])
-{
-printf("%s", va_arg(chars, char));
-i++;
-}
-}
-}
 
-else
+if ((n - 1) != i)
 {
-while (i < n)
-{
-if (va_arg(chars, char) != checker[i])
-{
-if ((n - 1) == i)
-{
-printf("%s", va_arg(chars, char));
-}
-else
-{
-printf("%s", va_arg(chars, char));
+printf("%s", va_arg(chars, char *));
 printf("%s", separator);
 }
+else
+{
+printf("%s", va_arg(chars, char *));
 }
+
 i++;
 }
+
+va_end(chars);
 putchar('\n');
-}
 }
