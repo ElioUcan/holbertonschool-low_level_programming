@@ -17,7 +17,7 @@ while (i < n)
 {
 str = va_arg(chars, char *);
 
-if (str != NULL && separator != NULL)
+if (str != NULL)
 {
 if ((n - 1) != i)
 {
