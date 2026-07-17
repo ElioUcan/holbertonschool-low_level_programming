@@ -8,7 +8,7 @@
 
 int main(int argc, char *argv[])
 {
-int i = 0;
+int i = 1;
 if (argv && argc > 1)
 {
 while (i < argc )
@@ -20,6 +20,7 @@ printf("%i\n", i);
 
 else
 {
+i = 0;
 printf("%i\n", i);
 }
 return (0);
