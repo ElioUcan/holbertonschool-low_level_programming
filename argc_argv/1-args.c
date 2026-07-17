@@ -8,12 +8,13 @@
 
 int main(int argc, char *argv[])
 {
-int i;
+int i = 1;
+int j = 0;
 if (argc > 0)
 {
-for (i = 0; argv[i] != NULL; )
+while (i < argc)
 {
-i++;
+j++;
 }
 printf("%i\n", i);
 }
