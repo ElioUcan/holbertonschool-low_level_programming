@@ -8,8 +8,7 @@
 
 int main(int argc, char *argv[])
 {
-int i;
-int j = 1;
+int i = 0;
 if (argc > 0)
 {
 while (argv[i] != NULL)
