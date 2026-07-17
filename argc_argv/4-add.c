@@ -31,12 +31,12 @@ return (1);
 }
 total += atoi(argv[i]);
 }
+printf("%i\n", total);
 }
 else
 {
 printf("0\n");
 }
-printf("%i\n", total);
 return (0);
 }
 
