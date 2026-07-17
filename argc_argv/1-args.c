@@ -13,4 +13,5 @@ for (i = 1; i < argc; i++)
 {
 printf("%i\n", i);
 }
+return (0);
 }
