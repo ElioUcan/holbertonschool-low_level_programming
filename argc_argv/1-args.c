@@ -9,9 +9,9 @@
 int main(int argc, char *argv[])
 {
 int i = 0;
-if (argv)
+if (argv && argc > 0)
 {
-while(i <= argc)
+while(i < argc)
 {
 i++;
 }
