@@ -15,7 +15,7 @@ if (argc > 2)
 {
 for (i = 1; i < argc; i++)
 {
-total *= atoi(argv[i]);
+total += atoi(argv[i]);
 if (total == 0)
 {
 printf("Error\n");
