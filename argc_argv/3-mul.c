@@ -9,12 +9,12 @@
 int main(int argc, char *argv[])
 {
 int i;
-int sum = 0;
-if (argc > 1 && argc > 3)
+int total = 1;
+if (argc > 1 && argc > 2)
 {
 for (i = 0; i < argc; i++)
 {
-sum += atoi(argv[i]);
+total *= atoi(argv[i]);
 }
 printf("%i\n", sum);
 }
