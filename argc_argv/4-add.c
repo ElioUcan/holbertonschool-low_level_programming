@@ -18,10 +18,13 @@ for (i = 1; i < argc; i++)
 {
 for (j = 0; argv[i][j] != '\0'; j++)
 {
-if ((argv[i][j] >= 'a' && argv[i][j] <= 'z') || (argv[i][j] >= 'A' && argv[i][j] <= 'Z')) 
+if (argv[i][j] >= 'a' && argv[i][j] <= 'z')
+{
+if (argv[i][j] >= 'A' && argv[i][j] <= 'Z')
 {
 printf("Error\n");
 return (1);
+}
 }
 }
 total += atoi(argv[i]);
