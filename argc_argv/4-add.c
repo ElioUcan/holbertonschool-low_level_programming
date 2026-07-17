@@ -10,17 +10,19 @@ int main(int argc, char *argv[])
 {
 
 int i;
+int number;
 int total = 0;
 if (argc > 2)
 {
 for (i = 1; i < argc; i++)
 {
-total += atoi(argv[i]);
-if (total == 0)
+number = atoi(argv[i]);
+if (number == 0)
 {
 printf("Error\n");
 return (1);
 }
+total += number;
 }
 printf("%i\n", total);
 }
