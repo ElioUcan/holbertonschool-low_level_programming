@@ -10,21 +10,23 @@ int main(int argc, char *argv[])
 {
 
 int i;
-int number;
+int j;
 int total = 0;
-if (argc > 2)
+if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
-number = atoi(argv[i]);
-if (number == 0)
+for (j = 0; argv[i][j] != '\0'; j++)
+{
+if ((argv[i][j] >= 'a' && argv[i][j] <= 'z') || (argv[i][j] >= 'A' && argv[i][j] <= 'Z')) 
 {
 printf("Error\n");
 return (1);
 }
-total += number;
 }
+total += atoi(argv[i]);
 printf("%i\n", total);
+}
 }
 else
 {
