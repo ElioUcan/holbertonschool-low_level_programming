@@ -16,7 +16,7 @@ for (i = 0; i < argc; i++)
 {
 total *= atoi(argv[i]);
 }
-printf("%i\n", sum);
+printf("%i\n", total);
 }
 else
 {
