@@ -8,19 +8,13 @@
 
 int main(int argc, char *argv[])
 {
-int i = 1;
+int i = -1;
 if (argv && argc > 1)
 {
 while (i < argc )
 {
 i++;
 }
-printf("%i\n", i);
-}
-
-else
-{
-i = 0;
 printf("%i\n", i);
 }
 return (0);
