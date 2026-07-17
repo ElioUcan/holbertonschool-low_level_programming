@@ -8,15 +8,17 @@
 
 int main(int argc, char *argv[])
 {
-int i = 1;
-int j = 0;
+int i = 0;
 if (argv && argc > 1)
 {
 while (i < argc )
 {
-j++;
 i++;
 }
+printf("%i\n", i);
+}
+else
+{
 printf("%i\n", i);
 }
 return (0);
