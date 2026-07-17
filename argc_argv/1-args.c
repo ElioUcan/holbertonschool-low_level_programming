@@ -17,7 +17,7 @@ while (i < argc )
 i++;
 j++;
 }
-printf("%i\n", i);
+printf("%i\n", j);
 }
 return (0);
 }
