@@ -15,6 +15,7 @@ if (argv)
 while (i < argc)
 {
 j++;
+i++;
 }
 printf("%i\n", i);
 }
