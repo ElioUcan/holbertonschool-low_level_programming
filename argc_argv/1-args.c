@@ -8,9 +8,15 @@
 
 int main(int argc, char *argv[])
 {
-if (argv)
+int i;
+int j = 1;
+if (argc > 0)
 {
-printf("%i\n", argc);
+while (argv[i] != NULL)
+{
+i++;
+}
+printf("%i\n", i);
 }
 return (0);
 }
