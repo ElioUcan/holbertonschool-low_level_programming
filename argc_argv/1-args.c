@@ -8,10 +8,10 @@
 
 int main(int argc, char *argv[])
 {
-int i = 0;
-if (argv && argc > 1)
+int i;
+if (argc > 1)
 {
-while(i <= argc)
+for (i = 0; argv[i] != NULL; )
 {
 i++;
 }
