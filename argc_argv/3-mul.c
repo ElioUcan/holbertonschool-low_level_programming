@@ -12,7 +12,7 @@ int i;
 int total = 1;
 if (argc > 1 && argc > 2)
 {
-for (i = 0; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
 total *= atoi(argv[i]);
 }
