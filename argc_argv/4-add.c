@@ -25,6 +25,11 @@ if (argv[i][j] >= 'A' && argv[i][j] <= 'Z')
 printf("Error\n");
 return (1);
 }
+else if (argv[i][j] >= 'A' && argv[i][j] <= 'Z')
+{
+printf("Error\n");
+return (1);
+}
 }
 }
 total += atoi(argv[i]);
