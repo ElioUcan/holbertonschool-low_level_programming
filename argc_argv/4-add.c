@@ -29,8 +29,8 @@ printf("Error\n");
 return (1);
 }
 }
-}
 total += atoi(argv[i]);
+}
 }
 else
 {
