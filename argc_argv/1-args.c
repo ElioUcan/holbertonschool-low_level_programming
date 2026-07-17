@@ -8,9 +8,7 @@
 
 int main(int argc, char *argv[])
 {
-int i;
-int j = 1;
-if (argv[i])
+if (argv)
 {
 printf("%i\n", argc);
 }
