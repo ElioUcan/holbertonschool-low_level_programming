@@ -25,8 +25,8 @@ return (1);
 }
 }
 total += atoi(argv[i]);
-printf("%i\n", total);
 }
+printf("%i\n", total);
 }
 else
 {
