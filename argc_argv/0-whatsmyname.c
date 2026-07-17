@@ -8,5 +8,8 @@
 
 void program_name(int argc, char *argv[])
 {
+if (argc > 0)
+{
 printf("%s\n", argv[0]);
+}
 }
