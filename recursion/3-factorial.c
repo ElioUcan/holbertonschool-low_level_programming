@@ -1,6 +1,14 @@
 #include "main.h"
 /**
- * _puts_recursion - prints a string
- * @s: string
- * Return: nothing
+ * factorial - returns a factorial
+ * @n: int
+ * Return: int
  */
+int factorial(int n)
+{
+if (n == 0 || n == 1)
+{
+return (0);
+}
+return (n * factorial(n - 1));
+}
