@@ -15,6 +15,6 @@ if (y == 0)
 {
 return (0);
 }
-_pow_recursion(x, (y - 1))
+_pow_recursion(x, (y - 1));
 return (x * x);
 }
