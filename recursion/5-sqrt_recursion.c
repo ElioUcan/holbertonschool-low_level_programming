@@ -13,7 +13,7 @@ return (-1);
 }
 else
 {
-return (1);
+return (n % n);
 }
 
 return (n / _sqrt_recursion(n));
