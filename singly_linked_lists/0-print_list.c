@@ -11,8 +11,7 @@ size_t count = 0;
 
 if (h == NULL)
 {
-printf("[nil]\n");
-return (count++);
+return (count);
 }
 
 while (h != NULL)
