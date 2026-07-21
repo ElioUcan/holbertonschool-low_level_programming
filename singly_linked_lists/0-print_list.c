@@ -15,4 +15,5 @@ printf("%s\n", *h->str);
 count++;
 }
 printf("[nil]\n");
+return (count);
 }
