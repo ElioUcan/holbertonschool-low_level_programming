@@ -11,7 +11,7 @@ size_t count = 0;
 while (h->next != NULL)
 {
 printf("%i\n", *h->str);
-*h->str = *h->next->str;
+*h->str = h->next->str;
 count++;
 }
 printf("[nil]\n");
