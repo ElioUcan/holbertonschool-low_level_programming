@@ -7,10 +7,12 @@
  */
 size_t print_list(const list_t *h)
 {
+size_t count = 0;
 while (*h->str != NULL)
 {
 printf("%s\n", *h->str);
 *h->str = *h->next->str;
+count++;
 }
 printf("[nil]\n");
 }
