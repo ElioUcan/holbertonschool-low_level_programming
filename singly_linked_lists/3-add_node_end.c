@@ -12,8 +12,10 @@ list_t *temp;
 int i = 0;
 if (*head == NULL)
 {
-return (NULL);
+*head = new_node;
 }
+else
+{
 temp = *head;
 if (str != NULL)
 {
@@ -36,11 +38,12 @@ free(new_node);
 return (NULL);
 }
 new_node->len = i;
-
+new_node->next = NULL;
 while (temp->next != NULL)
 {
 temp = temp->next;
 }
 temp->next = new_node;
+}
 return (new_node);
 }
