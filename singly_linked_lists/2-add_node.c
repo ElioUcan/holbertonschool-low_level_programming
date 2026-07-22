@@ -13,9 +13,12 @@ if (head == NULL)
 {
 return (NULL);
 }
+if (str != NULL)
+{
 while (str[i] != '\0')
 {
 i++;
+}
 }
 new_node = malloc(sizeof(list_t));
 if (new_node == NULL)
