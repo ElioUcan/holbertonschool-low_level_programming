@@ -13,11 +13,11 @@ int guess_square(int n, int try)
 {
 {
 if (try * try > n)
-return(-1);
+return (-1);
 }
 if (try * try == n)
 {
-return (try);    
+return (try);
 }
 
 return (guess_square(n, (try + 1)));
