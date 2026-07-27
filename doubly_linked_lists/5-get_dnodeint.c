@@ -15,10 +15,11 @@ dlistint_t *temp = head;
 while (temp != NULL)
 {
 if (i == index)
-{;
+{
 return (temp);
 }
 temp = temp->next;
+i++;
 }
 return (NULL);
 }
