@@ -17,25 +17,23 @@ if (newnode == NULL)
 {
 return (NULL);
 }
-
 newnode->n = n;
 newnode->next = NULL;
-newnode->prev = temp;
-
-
-while (temp)
+if (*head == NULL)
 {
-if (temp->next != NULL)
+newnode->prev = NULL;
+*head = newnode;
+return (newnode);
+}
+
+
+while (temp->next != NULL)
 {
 temp = temp->next;
 }
-else
-{
 temp->next = newnode;
-*head = newnode;
-}
 
-}
 
+newnode->prev = temp;
 return (newnode);
 }
