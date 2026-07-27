@@ -15,10 +15,12 @@ while (h)
 if (h->prev == NULL)
 {
 nodes += 1;
-h = NULL;
+printf("%i\n", h->n);
+h = h->next;
 }
 else if (h->next != NULL)
 {
+printf("%i\n", h->n);
 h = h->next;
 nodes += 1;
 }
