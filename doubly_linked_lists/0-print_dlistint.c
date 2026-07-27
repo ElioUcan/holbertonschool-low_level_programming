@@ -14,14 +14,15 @@ while (h)
 {
 if (h->prev == NULL)
 {
-nodes +=1;
+nodes += 1;
 h = NULL;
 }
-
-
+else if (h->next != NULL)
+{
+h = h->next;
+nodes += 1;
+}
 }
 
-
-
-
+return (nodes);
 }
