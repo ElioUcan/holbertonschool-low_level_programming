@@ -24,6 +24,10 @@ printf("%i\n", h->n);
 h = h->next;
 nodes += 1;
 }
+else
+{
+h = NULL;
+}
 }
 
 return (nodes);
