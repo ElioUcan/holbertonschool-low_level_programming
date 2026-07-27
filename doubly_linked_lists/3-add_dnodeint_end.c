@@ -19,8 +19,8 @@ return (NULL);
 }
 
 newnode->n = n;
-newnode->next = temp;
-newnode->prev = NULL;
+newnode->next = NULL;
+newnode->prev = temp;
 
 
 while (temp)
