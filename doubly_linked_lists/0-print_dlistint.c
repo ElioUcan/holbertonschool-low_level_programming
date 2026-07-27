@@ -26,6 +26,7 @@ nodes += 1;
 }
 else
 {
+printf("%i\n", h->n);
 h = NULL;
 }
 }
