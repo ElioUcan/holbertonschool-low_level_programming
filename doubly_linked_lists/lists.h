@@ -28,6 +28,6 @@ void free_dlistint(dlistint_t *head);
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
 int sum_dlistint(dlistint_t *head);
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
-dlistint_t *accom(dlistint_t *temp, dlistint_t **h, int n, dlistint_t *newnode)
+dlistint_t *accom(dlistint_t *temp, dlistint_t **h, dlistint_t *newnode);
 
 #endif
