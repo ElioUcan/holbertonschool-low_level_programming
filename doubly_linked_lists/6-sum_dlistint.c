@@ -3,7 +3,7 @@
 /**
  * sum_dlistint - sum of all data n
  * @head: node
- * Return: node
+ * Return: sum
  */
 
 int sum_dlistint(dlistint_t *head)
