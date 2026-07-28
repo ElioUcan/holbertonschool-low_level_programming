@@ -13,7 +13,7 @@ if (newtable == NULL)
 {
 return (NULL);
 }
-newtable->array = size;
+newtable->size = size;
 
 return (newtable);
 }
