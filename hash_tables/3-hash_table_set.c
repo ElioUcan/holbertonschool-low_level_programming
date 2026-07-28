@@ -28,6 +28,7 @@ while (temp != NULL)
 {
 if (strcmp(temp->key, key) == 0)
 {
+free(new_node);
 free(temp->value);
 temp->value = strdup(value);
 return (1);
