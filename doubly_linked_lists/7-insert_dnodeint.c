@@ -53,7 +53,6 @@ return (NULL);
 newnode->n = n;
 if (idx == 0)
 {
-newnode->n = n;
 newnode->prev = NULL;
 if (*h != NULL)
 (*h)->prev = newnode;
@@ -65,7 +64,7 @@ while (temp != NULL)
 {
 if (i == idx)
 {
-return (accomodate_node(temp, *h, newnode));
+return (accom(temp, *h, newnode));
 }
 if (i == idx - 1 && temp->next == NULL)
 {
