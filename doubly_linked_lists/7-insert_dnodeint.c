@@ -64,7 +64,7 @@ while (temp != NULL)
 {
 if (i == idx)
 {
-return (accom(temp, *h, newnode));
+return (accom(temp, h, newnode));
 }
 if (i == idx - 1 && temp->next == NULL)
 {
