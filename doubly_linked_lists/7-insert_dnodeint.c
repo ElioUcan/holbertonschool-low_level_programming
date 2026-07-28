@@ -4,15 +4,24 @@
 /**
  * accomodate_node - accomodates a node
  * @temp: unsigned int
+ * @h: node
+ * @n: int
  * Return: node
  */
-dlistint_t *accomodate_node(dlistint_t *temp)
+dlistint_t *accomodate_node(dlistint_t *temp, dlistint_t **h, int n)
 {
 dlistint_t *newnode;
+newnode = malloc(sizeof(dlistint_t));
+if (newnode == NULL)
+{
+return (NULL);
+}
+newnode->n = n;
 if (temp->next == NULL)
 {
 newnode->next = NULL;
 newnode->prev = temp;
+temp->next = newnode;
 return (newnode);
 }
 else if (temp->prev == NULL)
@@ -27,6 +36,8 @@ else
 {
 newnode->next = temp;
 newnode->prev = temp->prev;
+newnode->prev->next = newnode;
+temp->prev = newnode;
 return (newnode);
 }
 }
@@ -47,12 +58,11 @@ unsigned int i = 0;
 dlistint_t *temp = *h;
 dlistint_t *newnode;
 newnode = malloc(sizeof(dlistint_t));
-if (newnode == NULL && idx == 0)
+if (newnode == NULL)
 {
 return (NULL);
 }
 
-newnode->n = n;
 if (*h == NULL && idx == 0)
 {
 newnode->prev = NULL;
@@ -70,7 +80,7 @@ while (temp != NULL)
 {
 if (i == idx)
 {
-newnode = accomodate_node(temp);
+newnode = accomodate_node(temp, *h, n);
 return (newnode);
 }
 temp = temp->next;
