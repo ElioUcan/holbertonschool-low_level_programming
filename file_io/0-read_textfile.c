@@ -36,6 +36,7 @@ if (bytesWritten == -1)
 {
 return (0);
 }
+
 close(fd);
 return (bytesWritten);
 }
