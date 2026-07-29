@@ -9,9 +9,9 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 int fd;
-char buffer[1024];
+char buffer[letters];
 ssize_t bytesRead;
-ssize_t bytesWritten;
+
 
 if (filename == NULL)
 {
@@ -31,12 +31,7 @@ if (bytesRead == -1)
 {
 return (0);
 }
-bytesWritten = write(fd, letters, strlen(letters));
-if (bytesWritten == -1)
-{
-return (0);
-}
 
 close(fd);
-return (bytesWritten);
+return (bytesRead);
 }
