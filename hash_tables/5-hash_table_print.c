@@ -17,7 +17,7 @@ temp = ht->array;
 
 while (temp)
 {
-printf(temp->value);
+printf("%s",temp->value);
 temp = temp->next;
 }
 }
