@@ -4,69 +4,72 @@
 
 session_t *session_create(const char *id, unsigned int uid, const unsigned char *data, size_t data_len)
 {
-	session_t *s;
+    session_t *s;
 
-	s = (session_t *)malloc(sizeof(*s));
-	if (!s)
-		return NULL;
+    s = (session_t *)malloc(sizeof(*s));
+    if (!s)
+        return NULL;
 
-	s->id = strdup(id);
+    s->id = strdup(id);
     if (!s->id) {
         free(s);
         return NULL;
     }
-	s->uid = uid;
+    s->uid = uid;
 
-	if (data_len > 0) {
-		s->data = (unsigned char *)malloc(data_len);
-		if (!s->data) {
+    if (data_len > 0 && data != NULL) {
+        s->data = (unsigned char *)malloc(data_len);
+        if (!s->data) {
             free(s->id);
             free(s);
-			return NULL;
-		}
-		memcpy(s->data, data, data_len);
-		s->data_len = data_len;
-	} else {
-		s->data = NULL;
-		s->data_len = 0;
-	}
+            return NULL;
+        }
+        memcpy(s->data, data, data_len);
+        s->data_len = data_len;
+    } else {
+        s->data = NULL;
+        s->data_len = 0;
+    }
 
-	return s;
+    return s;
 }
 
 int session_set_data(session_t *s, const unsigned char *data, size_t data_len)
 {
-	unsigned char *tmp;
+    unsigned char *new_data;
 
-	if (!s)
-		return 0;
-
-	if (data_len == 0) {
-		free(s->data);
-		s->data = NULL;
-		s->data_len = 0;
-		return 1;
-	}
-
-	tmp = (unsigned char *)realloc(s->data, data_len);
-	if (tmp == NULL)
-    {
+    if (!s)
         return 0;
+
+    if (data_len == 0) {
+        free(s->data);
+        s->data = NULL;
+        s->data_len = 0;
+        return 1;
     }
-    s->data = tmp;
+
+    if (!data)
+        return 0;
+
+    new_data = (unsigned char *)malloc(data_len);
+    if (!new_data)
+        return 0;
+
+    memcpy(new_data, data, data_len);
+
+    free(s->data);
+    s->data = new_data;
+    s->data_len = data_len;
     
-	memcpy(s->data, data, data_len);
-	s->data_len = data_len;
-	return 1;
+    return 1;
 }
 
 void session_destroy(session_t *s)
 {
-	if (!s)
-		return;
+    if (!s)
+        return;
 
-	free(s->id);
-
-	free(s->data);
-	free(s);
+    free(s->id);
+    free(s->data);
+    free(s);
 }
