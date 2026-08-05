@@ -49,5 +49,5 @@ return (0);
 }
 free(buffer);
 close(fd);
-return (bytesRead);
+return (bytesWrite);
 }
