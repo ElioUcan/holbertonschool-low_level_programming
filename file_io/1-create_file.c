@@ -31,15 +31,14 @@ return (-1);
 
 if (text_content != NULL)
 {
-bytes_written = write(fd, text_content, length);
+bytes_written = write(fd, text_content, len);
 
-if (bytes_written == -1 || bytes_written != length)
+if (bytes_written == -1 || bytes_written != len)
 {
 close(fd);
 return (-1);
 }
 }
-
 
 close(fd);
 return (1);
