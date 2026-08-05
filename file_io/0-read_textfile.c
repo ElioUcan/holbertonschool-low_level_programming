@@ -22,6 +22,7 @@ fd = open(filename, O_RDONLY);
 
 if (fd == -1)
 {
+close(fd);
 return (0);
 }
 
@@ -29,6 +30,7 @@ bytesRead = read(fd, buffer, sizeof(buffer));
 
 if (bytesRead == -1)
 {
+close(fd);
 return (0);
 }
 
