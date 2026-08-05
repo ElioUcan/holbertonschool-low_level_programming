@@ -23,7 +23,7 @@ while (text_content[len] != '\0')
 len++;
 }
 
-fd = open(filename, O_WRONLY | O_CREAT | O_EXCL, 0600);
+fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 
 if (fd == -1)
 return (-1);
