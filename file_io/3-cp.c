@@ -56,7 +56,7 @@ if (readFile == -1)
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-close_file(fd1);
-close_file(fd2);
+closeFile(fd1);
+closeFile(fd2);
 return (0);
 }
